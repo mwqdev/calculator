@@ -1,0 +1,46 @@
+/* Colors
+darkGreen = #61B34F;
+lightGreen = #82C276;
+*/
+
+body {
+    font-family: sans-serif;
+}
+
+
+.calculator {
+    display: flex;
+    flex-wrap: wrap;
+    width: 325px;
+    height: 400px;
+    margin: 0 auto;
+}
+
+.calculator div {
+    background-color: #61B34F;
+    color: white;
+    font-size: 2rem;
+    width: 25%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.calculator div:nth-of-type(2) {
+    width: 75%;
+}
+
+.mouseOver:hover {
+    background-color: #82C276;
+}
+
+#divideOperator, #multiplyOperator, #subtractOperator, #addOperator {
+    background-color: #82C276;
+    color: black;
+}
+
+#divideOperator:hover, #multiplyOperator:hover, #subtractOperator:hover, #addOperator:hover {
+    color: white;
+}
