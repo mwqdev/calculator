@@ -1,0 +1,85 @@
+/* Colors
+darkGreen = #61B34F;
+lightGreen = #82C276;
+*/
+
+*
+{
+    font: 1.5rem Impact, 'Arial Narrow Bold', sans-serif;
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.calculator
+{
+    display: flex;
+
+    width: 400px;
+    height: auto;
+    margin: 150px auto;
+
+    flex-wrap: wrap;
+}
+
+.calculator div
+{
+    display: flex;
+
+    width: 25%;
+    padding: 1rem 0;
+
+    cursor: pointer;
+    user-select: none;
+    transition: all .2s ease;
+
+    color: white;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+    background-color: #61b34f;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator div.key:active {
+    background-color: rgba(97, 179, 79, 0.5);
+}
+
+.calculator div:nth-of-type(2)
+{
+    width: calc(75% - .125rem);
+    margin-bottom: .25rem;
+    padding: 0 .5rem 0 0;
+
+    cursor: text;
+    user-select: auto;
+
+    color: black;
+    border: 2px solid #61b34f;
+    background-color: white;
+
+    justify-content: flex-end;
+}
+
+.mouseOver:hover
+{
+    background-color: #82c276;
+}
+
+.calculator div.clear
+{
+    margin: 0 .125rem .25rem 0;
+}
+
+.calculator div.operator
+{
+    color: black;
+    background-color: #82c276;
+}
+
+.calculator div.operator:hover
+{
+    color: white;
+}
