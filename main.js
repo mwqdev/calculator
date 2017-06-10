@@ -17,4 +17,4 @@ var keyDecimal = document.getElementById('keyDecimal');
 var keyEquals = document.getElementById('keyEquals');
 var addOperator = document.getElementById('addOperator');
 
-var numberDiv = document.getElementsByClassName('numberDiv');
+var number = document.querySelectorAll('number');
