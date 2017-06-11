@@ -3,7 +3,7 @@ var keys = document.querySelectorAll('.key');
 
 for (i = 0; i < keys.length; i++) {
     // Add a click listener for whichever key is clicked
-    keys[i].addEventListener('click touchstart', function () {
+    keys[i].addEventListener('touchstart', function () {
         // Create a variable for the input view
         var input = document.querySelector('.inputView');
         // Create a string of the text contained in the input view
