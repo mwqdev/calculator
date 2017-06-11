@@ -5,7 +5,7 @@ lightGreen = #82C276;
 
 *
 {
-    font: 1.5rem Impact, 'Arial Narrow Bold', sans-serif;
+    font: 1.5rem 'Arial Narrow Bold', sans-serif;
 
     box-sizing: border-box;
     margin: 0;
@@ -82,4 +82,12 @@ lightGreen = #82C276;
 .calculator div.operator:hover
 {
     color: white;
+}
+
+/***** MOBILE LAYOUT *****/
+@media (max-width: 768px) {
+    .calculator {
+        width: 100vw;
+        margin: 0;
+    }
 }
