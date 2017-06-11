@@ -87,7 +87,7 @@ lightGreen = #82C276;
 /***** MOBILE LAYOUT *****/
 @media (max-width: 768px) {
     .calculator {
-        width: 100vw;
-        margin: 0;
+        width: 95vw;
+        margin: auto;
     }
 }

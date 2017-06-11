@@ -2,8 +2,8 @@
 var keys = document.querySelectorAll('.key');
 
 for (i = 0; i < keys.length; i++) {
-    // Add a click listener for whichever key is clicked
-    keys[i].addEventListener('click touchstart', function () {
+    // Create an eventListener function
+    var eventListener = function (e) {
         // Create a variable for the input view
         var input = document.querySelector('.inputView');
         // Create a string of the text contained in the input view
@@ -25,5 +25,10 @@ for (i = 0; i < keys.length; i++) {
             // Append the clicked key's value to the end of the input string
             input.innerHTML += keyValue;
         }
-    });
+        // This keeps the touch event from triggering twice
+        e.preventDefault();
+    }
+    // Add the listener function to whichever key is clicked or touched
+    keys[i].addEventListener('click', eventListener, false);
+    keys[i].addEventListener('touchstart', eventListener, false);
 }
